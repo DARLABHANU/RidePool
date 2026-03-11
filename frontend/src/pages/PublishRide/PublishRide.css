@@ -1,0 +1,150 @@
+.publish-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+    background-color: var(--light-bg);
+    padding: 40px 20px;
+}
+
+.publish-card {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.publish-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.publish-header h2 {
+    color: #1a4b66;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.publish-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.publish-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-section {
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 25px;
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.form-section h3 {
+    font-size: 14px;
+    color: #888;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-group {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    color: #888;
+}
+
+.input-icon.primary-color {
+    color: var(--primary);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.2s;
+    background-color: #f9fbfd;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: white;
+}
+
+/* Specific styling for seat/price inputs */
+.seat-group input,
+.price-group input {
+    padding-left: 15px;
+    /* Ignore absolute icon since these have labels */
+    width: 120px;
+    margin-left: 10px;
+}
+
+.seat-group .input-icon,
+.price-group .input-icon {
+    position: static;
+    margin-right: 10px;
+}
+
+.seat-group label,
+.price-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    white-space: nowrap;
+}
+
+.publish-submit-btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.publish-submit-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.publish-submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+
+    .form-row,
+    .form-row-thirds {
+        flex-direction: column;
+    }
+}

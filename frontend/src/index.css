@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #5c8fd2;
+  --primary-hover: #4a7ab8;
+  --bg-color: #ffffff;
+  --text-main: #333333;
+  --text-secondary: #666666;
+  --light-bg: #b9dce6; /* Driving in your car soon section background */
+  --banner-bg: #6392a8; /* Publish your ride section background */
+  --footer-bg: #8ccee3; /* Footer background */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: 'Outfit', sans-serif;
+}
