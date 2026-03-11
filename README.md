@@ -46,7 +46,7 @@ You need to have **Node.js** and **npm** installed on your machine, along with a
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/RidePool.git
+git clone https://github.com/darlabhanu/RidePool.git
 cd RidePool
 ```
 
