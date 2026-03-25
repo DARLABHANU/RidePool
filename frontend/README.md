@@ -1,16 +1,49 @@
-# React + Vite
+# 🚀 RidePool Frontend - React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for the RidePool ride-sharing application, built with React and Vite.
 
-Currently, two official plugins are available:
+## ✨ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React v19**: Modern UI component architecture.
+- **Vite**: Ultra-fast build tool and development server.
+- **Leaflet & React-Leaflet**: Integrated maps for interactive location selection.
+- **Lucide Icons**: Crisp, flexible icon set.
+- **Socket.io-Client**: Real-time communication for chat and notifications.
+- **React Router v7**: Declarative routing for a SPA experience.
+- **Axios**: Promised-based HTTP client for API requests.
 
-## React Compiler
+## 🛠️ Setup & Scripts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Ensure you have [Node.js](https://nodejs.org/) installed.
 
-## Expanding the ESLint configuration
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Start Dev Server**:
+   ```bash
+   npm run dev
+   ```
+   *The app will run at `http://localhost:5173/` by default.*
+
+3. **Build for Production**:
+   ```bash
+   npm run build
+   ```
+
+4. **Linting**:
+   ```bash
+   npm run lint
+   ```
+
+## 📂 Key Directories
+
+- `src/components/`: Reusable interface elements.
+- `src/pages/`: Main application views (Dashboard, Login, Profiles, etc.).
+- `src/utils/`: Custom helpers and API configuration.
+- `src/assets/`: Styles and media assets.
+
+---
+
+For backend setup, refer to the root `README.md`.
